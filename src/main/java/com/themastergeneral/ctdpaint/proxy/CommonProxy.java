@@ -1,5 +1,6 @@
 package com.themastergeneral.ctdpaint.proxy;
 
+import com.themastergeneral.ctdpaint.crafting.Crafting;
 import com.themastergeneral.ctdpaint.events.Painting;
 import com.themastergeneral.ctdpaint.items.ModItems;
 
@@ -15,6 +16,7 @@ public class CommonProxy
 	public void preInit(FMLPreInitializationEvent e) 
 	{
 		ModItems.registerItems();
+		Crafting.addRecipes();
 	}
 
 	public void init(FMLInitializationEvent e) 
