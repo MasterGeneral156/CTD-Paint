@@ -21,6 +21,7 @@ public class BasicItem extends Item implements ItemModelProvider
         this.setRegistryName(unlocalizedName + "_brush");
         this.setNoRepair();
         this.maxStackSize = 1;
+        this.name = unlocalizedName;
     }
 	public void registerItemModel(Item item) 
 	{
