@@ -114,8 +114,8 @@ public class Painting
 					int randomInt = randomGenerator.nextInt(100);
 					if (randomInt == 1)
 					{
-						System.out.println("Paintbrush out of paint.");
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
 			}
@@ -212,6 +212,7 @@ public class Painting
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
 			}
@@ -308,6 +309,7 @@ public class Painting
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
 			}
@@ -404,6 +406,7 @@ public class Painting
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
 			}
@@ -500,6 +503,7 @@ public class Painting
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
 			}
