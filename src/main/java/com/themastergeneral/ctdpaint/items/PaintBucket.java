@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 
 import com.themastergeneral.ctdpaint.CTDPaint;
 import com.themastergeneral.ctdpaint.client.ItemModelProvider;
+import com.themastergeneral.ctdpaint.config.Config;
 
 public class PaintBucket extends Item implements ItemModelProvider
 {
@@ -17,7 +18,7 @@ public class PaintBucket extends Item implements ItemModelProvider
 		this.setUnlocalizedName(unlocalizedName);
         this.setCreativeTab(CreativeTabs.TOOLS);
         this.setRegistryName(unlocalizedName);
-		this.setMaxDamage(15);
+		this.setMaxDamage(Config.bucketUseNumber-1);
 		this.setNoRepair();
 		this.maxStackSize = 1;
 	}

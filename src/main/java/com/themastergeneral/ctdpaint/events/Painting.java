@@ -12,6 +12,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import com.themastergeneral.ctdpaint.config.Config;
 import com.themastergeneral.ctdpaint.items.ModItems;
 
 public class Painting 
@@ -108,10 +109,10 @@ public class Painting
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(15));
 					painted = true;
 				}
-				if (painted == true)
+				if (painted == true && Config.DoPaintBrushBreak == true)
 				{
 					Random randomGenerator = new Random();
-					int randomInt = randomGenerator.nextInt(100);
+					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
@@ -205,10 +206,10 @@ public class Painting
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(15));
 					painted = true;
 				}
-				if (painted == true)
+				if (painted == true && Config.DoPaintBrushBreak == true)
 				{
 					Random randomGenerator = new Random();
-					int randomInt = randomGenerator.nextInt(100);
+					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
@@ -302,10 +303,10 @@ public class Painting
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(15));
 					painted = true;
 				}
-				if (painted == true)
+				if (painted == true && Config.DoPaintBrushBreak == true)
 				{
 					Random randomGenerator = new Random();
-					int randomInt = randomGenerator.nextInt(100);
+					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
@@ -399,10 +400,10 @@ public class Painting
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(15));
 					painted = true;
 				}
-				if (painted == true)
+				if (painted == true && Config.DoPaintBrushBreak == true)
 				{
 					Random randomGenerator = new Random();
-					int randomInt = randomGenerator.nextInt(100);
+					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
@@ -496,10 +497,10 @@ public class Painting
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(15));
 					painted = true;
 				}
-				if (painted == true)
+				if (painted == true && Config.DoPaintBrushBreak == true)
 				{
 					Random randomGenerator = new Random();
-					int randomInt = randomGenerator.nextInt(100);
+					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
 						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
