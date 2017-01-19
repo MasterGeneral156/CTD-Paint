@@ -40,6 +40,7 @@ public class VersionChecker implements Runnable
         {
             IOUtils.closeQuietly(in);
         }
+        isLatestVersion = CTDPaint.VERSION.equals(latestVersion);
     }
     
     public boolean isLatestVersion()
