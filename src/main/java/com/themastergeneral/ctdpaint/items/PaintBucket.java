@@ -4,27 +4,18 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdpaint.CTDPaint;
-import com.themastergeneral.ctdpaint.client.ItemModelProvider;
 import com.themastergeneral.ctdpaint.config.Config;
 
-public class PaintBucket extends Item implements ItemModelProvider
+public class PaintBucket extends BasicItem
 {
-	String name;
-	public PaintBucket(String unlocalizedName) 
+	public PaintBucket(String unlocalizedName, String modid) 
 	{
-		super();
-		this.name = unlocalizedName;
-		this.setUnlocalizedName(unlocalizedName);
-        this.setCreativeTab(CreativeTabs.TOOLS);
-        this.setRegistryName(unlocalizedName);
+		super(unlocalizedName, modid);
 		this.setMaxDamage(Config.bucketUseNumber-1);
 		this.setNoRepair();
 		this.maxStackSize = 1;
-	}
-	public void registerItemModel(Item item) 
-	{
-		CTDPaint.proxy.registerItemRenderer(this, 0, name);
 	}
 	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemStack)
 	 {

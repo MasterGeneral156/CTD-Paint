@@ -8,6 +8,7 @@ import com.themastergeneral.ctdpaint.CTDPaint;
 import com.themastergeneral.ctdpaint.config.Config;
 import com.themastergeneral.ctdpaint.crafting.Crafting;
 import com.themastergeneral.ctdpaint.events.Painting;
+import com.themastergeneral.ctdpaint.integration.MoGlowstone;
 import com.themastergeneral.ctdpaint.items.ModItems;
 
 import net.minecraft.item.Item;
@@ -24,7 +25,6 @@ public class CommonProxy
 
 	public void preInit(FMLPreInitializationEvent e) 
 	{
-		//CTDPaint.logger.log(Level.INFO, CTDPaint.MODNAME+" is loading.");
 		File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "CTD/CTDPaint.cfg"));
         Config.readConfig();
@@ -35,6 +35,10 @@ public class CommonProxy
 	public void init(FMLInitializationEvent e) 
 	{
 		MinecraftForge.EVENT_BUS.register(new Painting());
+		if (CTDPaint.moglowstoneloaded == true && Config.disableMoGlowstone == false)
+		{
+			MinecraftForge.EVENT_BUS.register(new MoGlowstone());
+		}
 	}
 
 	public void postInit(FMLPostInitializationEvent e) 
@@ -43,11 +47,5 @@ public class CommonProxy
 		{
             config.save();
         }
-		//CTDPaint.logger.log(Level.INFO, CTDPaint.MODNAME+" is loaded.");
 	}
-	public void registerItemRenderer(Item item, int meta, String id) 
-    {
-    	 
-    }
-
 }

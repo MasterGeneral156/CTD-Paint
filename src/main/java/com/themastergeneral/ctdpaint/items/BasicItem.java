@@ -2,29 +2,21 @@ package com.themastergeneral.ctdpaint.items;
 
 import java.util.List;
 
+import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdpaint.CTDPaint;
-import com.themastergeneral.ctdpaint.client.ItemModelProvider;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class BasicItem extends Item implements ItemModelProvider
+public class BasicItem extends CTDItem
 {
-	protected String name;
-	public BasicItem(String unlocalizedName) 
+	public BasicItem(String unlocalizedName, String modid) 
 	{
-        super();
-        this.setUnlocalizedName(unlocalizedName + "_brush");
+        super(unlocalizedName, modid);
         this.setCreativeTab(CreativeTabs.TOOLS);
-        this.setRegistryName(unlocalizedName + "_brush");
         this.setNoRepair();
         this.maxStackSize = 1;
-        this.name = unlocalizedName;
     }
-	public void registerItemModel(Item item) 
-	{
-		CTDPaint.proxy.registerItemRenderer(this, 0, name);
-	}
 }

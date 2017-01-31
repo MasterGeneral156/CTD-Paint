@@ -23,10 +23,10 @@ public class Crafting
 						));
 		//Black Paint Brush
 		GameRegistry.addShapelessRecipe(
-				new ItemStack(ModItems.black), 
+				new ItemStack(ModItems.black_brush), 
 					new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.black_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.black_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 		//Blue Paint Bucket
@@ -40,10 +40,10 @@ public class Crafting
 								));
 		//Blue Paint Brush
 		GameRegistry.addShapelessRecipe(
-				new ItemStack(ModItems.blue), 
+				new ItemStack(ModItems.blue_brush), 
 					new Object[] 
 					{ 
-						ModItems.unused, new ItemStack(ModItems.blue_bucket, 1, OreDictionary.WILDCARD_VALUE),
+						ModItems.unused_brush, new ItemStack(ModItems.blue_bucket, 1, OreDictionary.WILDCARD_VALUE),
 					}
 				);
 		//Brown Paint Bucket
@@ -57,10 +57,10 @@ public class Crafting
 										));
 				//Brown Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.brown), 
+						new ItemStack(ModItems.brown_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.brown_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.brown_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Cyan Paint Bucket
@@ -74,10 +74,10 @@ public class Crafting
 										));
 				//Cyan Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.cyan), 
+						new ItemStack(ModItems.cyan_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.cyan_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.cyan_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Gray Paint Bucket
@@ -91,10 +91,10 @@ public class Crafting
 										));
 				//Gray Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.gray), 
+						new ItemStack(ModItems.gray_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.gray_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.gray_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Green Paint Bucket
@@ -108,10 +108,10 @@ public class Crafting
 										));
 				//Green Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.green), 
+						new ItemStack(ModItems.green_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.green_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.green_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Light Blue Paint Bucket
@@ -125,10 +125,10 @@ public class Crafting
 										));
 				//Light Blue Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.light_blue), 
+						new ItemStack(ModItems.light_blue_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.light_blue_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.light_blue_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Lime Paint Bucket
@@ -142,10 +142,10 @@ public class Crafting
 										));
 				//Lime Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.lime), 
+						new ItemStack(ModItems.lime_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.lime_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.lime_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Magenta Paint Bucket
@@ -159,10 +159,10 @@ public class Crafting
 										));
 				//Magenta Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.magenta), 
+						new ItemStack(ModItems.magenta_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.magenta_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.magenta_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Orange Paint Bucket
@@ -176,10 +176,10 @@ public class Crafting
 										));
 				//Orange Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.orange), 
+						new ItemStack(ModItems.orange_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.orange_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.orange_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Pink Paint Bucket
@@ -193,10 +193,10 @@ public class Crafting
 										));
 				//Pink Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.pink), 
+						new ItemStack(ModItems.pink_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.pink_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.pink_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Purple Paint Bucket
@@ -210,10 +210,10 @@ public class Crafting
 										));
 				//Purple Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.purple), 
+						new ItemStack(ModItems.purple_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.purple_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.purple_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Red Paint Bucket
@@ -227,10 +227,10 @@ public class Crafting
 										));
 				//Red Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.red), 
+						new ItemStack(ModItems.red_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.red_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.red_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Silver Paint Bucket
@@ -244,10 +244,10 @@ public class Crafting
 										));
 				//Silver Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.silver), 
+						new ItemStack(ModItems.silver_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.silver_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.silver_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//White Paint Bucket
@@ -261,10 +261,10 @@ public class Crafting
 										));
 				//White Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.white), 
+						new ItemStack(ModItems.white_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.white_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.white_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				//Yellow Paint Bucket
@@ -278,16 +278,16 @@ public class Crafting
 										));
 				//gray Paint Brush
 				GameRegistry.addShapelessRecipe(
-						new ItemStack(ModItems.yellow), 
+						new ItemStack(ModItems.yellow_brush), 
 							new Object[] 
 							{ 
-								ModItems.unused, new ItemStack(ModItems.yellow_bucket, 1, OreDictionary.WILDCARD_VALUE),
+								ModItems.unused_brush, new ItemStack(ModItems.yellow_bucket, 1, OreDictionary.WILDCARD_VALUE),
 							}
 						);
 				
 		//Unused Paintbrush
 		GameRegistry.addRecipe(
-				new ItemStack(ModItems.unused), 
+				new ItemStack(ModItems.unused_brush), 
 					"W", "S", 'W', Items.WHEAT, 'S', Items.STICK);
 		
 	}

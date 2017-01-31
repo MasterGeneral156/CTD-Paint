@@ -32,8 +32,4 @@ public class ClientProxy extends CommonProxy
         Thread versionCheckThread = new Thread(CTDPaint.versionChecker, "Version Check");
         versionCheckThread.start();
     }
-    public void registerItemRenderer(Item item, int meta, String id)
-    {
-    	 ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation("ctdpaint:" + id, "inventory"));
-    }
 }

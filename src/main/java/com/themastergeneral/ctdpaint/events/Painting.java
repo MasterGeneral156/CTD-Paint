@@ -29,82 +29,82 @@ public class Painting
 			if (player.getHeldItem(EnumHand.MAIN_HAND) != null)
 			{
 				Item item = player.getHeldItem(EnumHand.MAIN_HAND).getItem();
-				if (item == ModItems.white)
+				if (item == ModItems.white_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(0));
 					painted = true;
 				}
-				if (item == ModItems.orange)
+				if (item == ModItems.orange_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(1));
 					painted = true;
 				}
-				if (item == ModItems.magenta)
+				if (item == ModItems.magenta_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(2));
 					painted = true;
 				}
-				if (item == ModItems.light_blue)
+				if (item == ModItems.light_blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(3));
 					painted = true;
 				}
-				if (item == ModItems.yellow)
+				if (item == ModItems.yellow_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(4));
 					painted = true;
 				}
-				if (item == ModItems.lime)
+				if (item == ModItems.lime_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(5));
 					painted = true;
 				}
-				if (item == ModItems.pink)
+				if (item == ModItems.pink_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(6));
 					painted = true;
 				}
-				if (item == ModItems.gray)
+				if (item == ModItems.gray_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(7));
 					painted = true;
 				}
-				if (item == ModItems.silver)
+				if (item == ModItems.silver_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(8));
 					painted = true;
 				}
-				if (item == ModItems.cyan)
+				if (item == ModItems.cyan_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(9));
 					painted = true;
 				}
-				if (item == ModItems.purple)
+				if (item == ModItems.purple_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(10));
 					painted = true;
 				}
-				if (item == ModItems.blue)
+				if (item == ModItems.blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(11));
 					painted = true;
 				}
-				if (item == ModItems.brown)
+				if (item == ModItems.brown_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(12));
 					painted = true;
 				}
-				if (item == ModItems.green)
+				if (item == ModItems.green_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(13));
 					painted = true;
 				}
-				if (item == ModItems.red)
+				if (item == ModItems.red_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(14));
 					painted = true;
 				}
-				if (item == ModItems.black)
+				if (item == ModItems.black_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.WOOL.getStateFromMeta(15));
 					painted = true;
@@ -115,7 +115,7 @@ public class Painting
 					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
-						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused_brush));
 						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
@@ -126,82 +126,82 @@ public class Painting
 			if (player.getHeldItem(EnumHand.MAIN_HAND) != null)
 			{
 				Item item = player.getHeldItem(EnumHand.MAIN_HAND).getItem();
-				if (item == ModItems.white)
+				if (item == ModItems.white_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(0));
 					painted = true;
 				}
-				if (item == ModItems.orange)
+				if (item == ModItems.orange_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(1));
 					painted = true;
 				}
-				if (item == ModItems.magenta)
+				if (item == ModItems.magenta_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(2));
 					painted = true;
 				}
-				if (item == ModItems.light_blue)
+				if (item == ModItems.light_blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(3));
 					painted = true;
 				}
-				if (item == ModItems.yellow)
+				if (item == ModItems.yellow_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(4));
 					painted = true;
 				}
-				if (item == ModItems.lime)
+				if (item == ModItems.lime_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(5));
 					painted = true;
 				}
-				if (item == ModItems.pink)
+				if (item == ModItems.pink_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(6));
 					painted = true;
 				}
-				if (item == ModItems.gray)
+				if (item == ModItems.gray_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(7));
 					painted = true;
 				}
-				if (item == ModItems.silver)
+				if (item == ModItems.silver_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(8));
 					painted = true;
 				}
-				if (item == ModItems.cyan)
+				if (item == ModItems.cyan_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(9));
 					painted = true;
 				}
-				if (item == ModItems.purple)
+				if (item == ModItems.purple_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(10));
 					painted = true;
 				}
-				if (item == ModItems.blue)
+				if (item == ModItems.blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(11));
 					painted = true;
 				}
-				if (item == ModItems.brown)
+				if (item == ModItems.brown_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(12));
 					painted = true;
 				}
-				if (item == ModItems.green)
+				if (item == ModItems.green_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(13));
 					painted = true;
 				}
-				if (item == ModItems.red)
+				if (item == ModItems.red_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(14));
 					painted = true;
 				}
-				if (item == ModItems.black)
+				if (item == ModItems.black_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS.getStateFromMeta(15));
 					painted = true;
@@ -212,7 +212,7 @@ public class Painting
 					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
-						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused_brush));
 						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
@@ -223,82 +223,82 @@ public class Painting
 			if (player.getHeldItem(EnumHand.MAIN_HAND) != null)
 			{
 				Item item = player.getHeldItem(EnumHand.MAIN_HAND).getItem();
-				if (item == ModItems.white)
+				if (item == ModItems.white_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(0));
 					painted = true;
 				}
-				if (item == ModItems.orange)
+				if (item == ModItems.orange_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(1));
 					painted = true;
 				}
-				if (item == ModItems.magenta)
+				if (item == ModItems.magenta_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(2));
 					painted = true;
 				}
-				if (item == ModItems.light_blue)
+				if (item == ModItems.light_blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(3));
 					painted = true;
 				}
-				if (item == ModItems.yellow)
+				if (item == ModItems.yellow_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(4));
 					painted = true;
 				}
-				if (item == ModItems.lime)
+				if (item == ModItems.lime_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(5));
 					painted = true;
 				}
-				if (item == ModItems.pink)
+				if (item == ModItems.pink_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(6));
 					painted = true;
 				}
-				if (item == ModItems.gray)
+				if (item == ModItems.gray_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(7));
 					painted = true;
 				}
-				if (item == ModItems.silver)
+				if (item == ModItems.silver_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(8));
 					painted = true;
 				}
-				if (item == ModItems.cyan)
+				if (item == ModItems.cyan_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(9));
 					painted = true;
 				}
-				if (item == ModItems.purple)
+				if (item == ModItems.purple_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(10));
 					painted = true;
 				}
-				if (item == ModItems.blue)
+				if (item == ModItems.blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(11));
 					painted = true;
 				}
-				if (item == ModItems.brown)
+				if (item == ModItems.brown_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(12));
 					painted = true;
 				}
-				if (item == ModItems.green)
+				if (item == ModItems.green_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(13));
 					painted = true;
 				}
-				if (item == ModItems.red)
+				if (item == ModItems.red_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(14));
 					painted = true;
 				}
-				if (item == ModItems.black)
+				if (item == ModItems.black_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(15));
 					painted = true;
@@ -309,7 +309,7 @@ public class Painting
 					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
-						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused_brush));
 						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
@@ -320,82 +320,82 @@ public class Painting
 			if (player.getHeldItem(EnumHand.MAIN_HAND) != null)
 			{
 				Item item = player.getHeldItem(EnumHand.MAIN_HAND).getItem();
-				if (item == ModItems.white)
+				if (item == ModItems.white_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(0));
 					painted = true;
 				}
-				if (item == ModItems.orange)
+				if (item == ModItems.orange_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(1));
 					painted = true;
 				}
-				if (item == ModItems.magenta)
+				if (item == ModItems.magenta_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(2));
 					painted = true;
 				}
-				if (item == ModItems.light_blue)
+				if (item == ModItems.light_blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(3));
 					painted = true;
 				}
-				if (item == ModItems.yellow)
+				if (item == ModItems.yellow_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(4));
 					painted = true;
 				}
-				if (item == ModItems.lime)
+				if (item == ModItems.lime_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(5));
 					painted = true;
 				}
-				if (item == ModItems.pink)
+				if (item == ModItems.pink_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(6));
 					painted = true;
 				}
-				if (item == ModItems.gray)
+				if (item == ModItems.gray_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(7));
 					painted = true;
 				}
-				if (item == ModItems.silver)
+				if (item == ModItems.silver_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(8));
 					painted = true;
 				}
-				if (item == ModItems.cyan)
+				if (item == ModItems.cyan_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(9));
 					painted = true;
 				}
-				if (item == ModItems.purple)
+				if (item == ModItems.purple_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(10));
 					painted = true;
 				}
-				if (item == ModItems.blue)
+				if (item == ModItems.blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(11));
 					painted = true;
 				}
-				if (item == ModItems.brown)
+				if (item == ModItems.brown_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(12));
 					painted = true;
 				}
-				if (item == ModItems.green)
+				if (item == ModItems.green_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(13));
 					painted = true;
 				}
-				if (item == ModItems.red)
+				if (item == ModItems.red_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(14));
 					painted = true;
 				}
-				if (item == ModItems.black)
+				if (item == ModItems.black_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.STAINED_GLASS_PANE.getStateFromMeta(15));
 					painted = true;
@@ -406,7 +406,7 @@ public class Painting
 					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
-						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused_brush));
 						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
@@ -417,82 +417,82 @@ public class Painting
 			if (player.getHeldItem(EnumHand.MAIN_HAND) != null)
 			{
 				Item item = player.getHeldItem(EnumHand.MAIN_HAND).getItem();
-				if (item == ModItems.white)
+				if (item == ModItems.white_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(0));
 					painted = true;
 				}
-				if (item == ModItems.orange)
+				if (item == ModItems.orange_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(1));
 					painted = true;
 				}
-				if (item == ModItems.magenta)
+				if (item == ModItems.magenta_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(2));
 					painted = true;
 				}
-				if (item == ModItems.light_blue)
+				if (item == ModItems.light_blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(3));
 					painted = true;
 				}
-				if (item == ModItems.yellow)
+				if (item == ModItems.yellow_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(4));
 					painted = true;
 				}
-				if (item == ModItems.lime)
+				if (item == ModItems.lime_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(5));
 					painted = true;
 				}
-				if (item == ModItems.pink)
+				if (item == ModItems.pink_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(6));
 					painted = true;
 				}
-				if (item == ModItems.gray)
+				if (item == ModItems.gray_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(7));
 					painted = true;
 				}
-				if (item == ModItems.silver)
+				if (item == ModItems.silver_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(8));
 					painted = true;
 				}
-				if (item == ModItems.cyan)
+				if (item == ModItems.cyan_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(9));
 					painted = true;
 				}
-				if (item == ModItems.purple)
+				if (item == ModItems.purple_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(10));
 					painted = true;
 				}
-				if (item == ModItems.blue)
+				if (item == ModItems.blue_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(11));
 					painted = true;
 				}
-				if (item == ModItems.brown)
+				if (item == ModItems.brown_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(12));
 					painted = true;
 				}
-				if (item == ModItems.green)
+				if (item == ModItems.green_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(13));
 					painted = true;
 				}
-				if (item == ModItems.red)
+				if (item == ModItems.red_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(14));
 					painted = true;
 				}
-				if (item == ModItems.black)
+				if (item == ModItems.black_brush)
 				{
 					world.setBlockState(event.getPos(), Blocks.CARPET.getStateFromMeta(15));
 					painted = true;
@@ -503,7 +503,7 @@ public class Painting
 					int randomInt = randomGenerator.nextInt(Config.PaintBrushBreakChance);
 					if (randomInt == 1)
 					{
-						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused));
+						player.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.unused_brush));
 						player.inventoryContainer.detectAndSendChanges();
 					}
 				}
