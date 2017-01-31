@@ -40,7 +40,6 @@ public class CommonProxy
 			MinecraftForge.EVENT_BUS.register(new MoGlowstone());
 		}
 	}
-
 	public void postInit(FMLPostInitializationEvent e) 
 	{
 		if (config.hasChanged()) 
