@@ -37,22 +37,22 @@ public class MoGlowstone
 				Item item = player.getHeldItem(EnumHand.MAIN_HAND).getItem();
 				if (item == ModItems.white_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.white.getStateFromMeta(0));
+					world.setBlockState(event.getPos(), ModBlocks.white_gsblock.getStateFromMeta(0));
 					painted = true;
 				}
 				if (item == ModItems.orange_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.orange.getStateFromMeta(0));
+					world.setBlockState(event.getPos(), ModBlocks.orange_gsblock.getStateFromMeta(0));
 					painted = true;
 				}
 				if (item == ModItems.magenta_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.magenta.getStateFromMeta(2));
+					world.setBlockState(event.getPos(), ModBlocks.magenta_gsblock.getStateFromMeta(2));
 					painted = true;
 				}
 				if (item == ModItems.light_blue_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.lblue.getStateFromMeta(3));
+					world.setBlockState(event.getPos(), ModBlocks.lblue_gsblock.getStateFromMeta(3));
 					painted = true;
 				}
 				if (item == ModItems.yellow_brush)
@@ -62,57 +62,57 @@ public class MoGlowstone
 				}
 				if (item == ModItems.lime_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.lime.getStateFromMeta(5));
+					world.setBlockState(event.getPos(), ModBlocks.lime_gsblock.getStateFromMeta(5));
 					painted = true;
 				}
 				if (item == ModItems.pink_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.pink.getStateFromMeta(6));
+					world.setBlockState(event.getPos(), ModBlocks.pink_gsblock.getStateFromMeta(6));
 					painted = true;
 				}
 				if (item == ModItems.gray_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.gray.getStateFromMeta(7));
+					world.setBlockState(event.getPos(), ModBlocks.gray_gsblock.getStateFromMeta(7));
 					painted = true;
 				}
 				if (item == ModItems.silver_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.lgray.getStateFromMeta(8));
+					world.setBlockState(event.getPos(), ModBlocks.lgray_gsblock.getStateFromMeta(8));
 					painted = true;
 				}
 				if (item == ModItems.cyan_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.cyan.getStateFromMeta(9));
+					world.setBlockState(event.getPos(), ModBlocks.cyan_gsblock.getStateFromMeta(9));
 					painted = true;
 				}
 				if (item == ModItems.purple_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.purple.getStateFromMeta(10));
+					world.setBlockState(event.getPos(), ModBlocks.purple_gsblock.getStateFromMeta(10));
 					painted = true;
 				}
 				if (item == ModItems.blue_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.blue.getStateFromMeta(11));
+					world.setBlockState(event.getPos(), ModBlocks.blue_gsblock.getStateFromMeta(11));
 					painted = true;
 				}
 				if (item == ModItems.brown_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.brown.getStateFromMeta(12));
+					world.setBlockState(event.getPos(), ModBlocks.brown_gsblock.getStateFromMeta(12));
 					painted = true;
 				}
 				if (item == ModItems.green_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.green.getStateFromMeta(13));
+					world.setBlockState(event.getPos(), ModBlocks.green_gsblock.getStateFromMeta(13));
 					painted = true;
 				}
 				if (item == ModItems.red_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.red.getStateFromMeta(14));
+					world.setBlockState(event.getPos(), ModBlocks.red_gsblock.getStateFromMeta(14));
 					painted = true;
 				}
 				if (item == ModItems.black_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.black.getStateFromMeta(15));
+					world.setBlockState(event.getPos(), ModBlocks.black_gsblock.getStateFromMeta(15));
 					painted = true;
 				}
 				if (painted == true && Config.DoPaintBrushBreak == true)
@@ -134,22 +134,22 @@ public class MoGlowstone
 				Item item = player.getHeldItem(EnumHand.MAIN_HAND).getItem();
 				if (item == ModItems.white_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.white.getStateFromMeta(0));
+					world.setBlockState(event.getPos(), ModBlocks.white_gsblock.getStateFromMeta(0));
 					painted = true;
 				}
 				if (item == ModItems.orange_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.orange.getStateFromMeta(0));
+					world.setBlockState(event.getPos(), ModBlocks.orange_gsblock.getStateFromMeta(0));
 					painted = true;
 				}
 				if (item == ModItems.magenta_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.magenta.getStateFromMeta(2));
+					world.setBlockState(event.getPos(), ModBlocks.magenta_gsblock.getStateFromMeta(2));
 					painted = true;
 				}
 				if (item == ModItems.light_blue_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.lblue.getStateFromMeta(3));
+					world.setBlockState(event.getPos(), ModBlocks.lblue_gsblock.getStateFromMeta(3));
 					painted = true;
 				}
 				if (item == ModItems.yellow_brush)
@@ -159,57 +159,57 @@ public class MoGlowstone
 				}
 				if (item == ModItems.lime_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.lime.getStateFromMeta(5));
+					world.setBlockState(event.getPos(), ModBlocks.lime_gsblock.getStateFromMeta(5));
 					painted = true;
 				}
 				if (item == ModItems.pink_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.pink.getStateFromMeta(6));
+					world.setBlockState(event.getPos(), ModBlocks.pink_gsblock.getStateFromMeta(6));
 					painted = true;
 				}
 				if (item == ModItems.gray_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.gray.getStateFromMeta(7));
+					world.setBlockState(event.getPos(), ModBlocks.gray_gsblock.getStateFromMeta(7));
 					painted = true;
 				}
 				if (item == ModItems.silver_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.lgray.getStateFromMeta(8));
+					world.setBlockState(event.getPos(), ModBlocks.lgray_gsblock.getStateFromMeta(8));
 					painted = true;
 				}
 				if (item == ModItems.cyan_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.cyan.getStateFromMeta(9));
+					world.setBlockState(event.getPos(), ModBlocks.cyan_gsblock.getStateFromMeta(9));
 					painted = true;
 				}
 				if (item == ModItems.purple_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.purple.getStateFromMeta(10));
+					world.setBlockState(event.getPos(), ModBlocks.purple_gsblock.getStateFromMeta(10));
 					painted = true;
 				}
 				if (item == ModItems.blue_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.blue.getStateFromMeta(11));
+					world.setBlockState(event.getPos(), ModBlocks.blue_gsblock.getStateFromMeta(11));
 					painted = true;
 				}
 				if (item == ModItems.brown_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.brown.getStateFromMeta(12));
+					world.setBlockState(event.getPos(), ModBlocks.brown_gsblock.getStateFromMeta(12));
 					painted = true;
 				}
 				if (item == ModItems.green_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.green.getStateFromMeta(13));
+					world.setBlockState(event.getPos(), ModBlocks.green_gsblock.getStateFromMeta(13));
 					painted = true;
 				}
 				if (item == ModItems.red_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.red.getStateFromMeta(14));
+					world.setBlockState(event.getPos(), ModBlocks.red_gsblock.getStateFromMeta(14));
 					painted = true;
 				}
 				if (item == ModItems.black_brush)
 				{
-					world.setBlockState(event.getPos(), ModBlocks.black.getStateFromMeta(15));
+					world.setBlockState(event.getPos(), ModBlocks.black_gsblock.getStateFromMeta(15));
 					painted = true;
 				}
 				if (painted == true && Config.DoPaintBrushBreak == true)
