@@ -17,7 +17,7 @@ public class VersionChecker implements Runnable
         InputStream in = null;
         try 
         {
-            in = new URL("https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Mod%20Version/CTDPaint_1102").openStream();
+            in = new URL("https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Mod%20Version/CTDPaint_1112").openStream();
         } 
         catch 
         (MalformedURLException e) 

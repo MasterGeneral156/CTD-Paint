@@ -4,7 +4,7 @@
   "name": "CTD Paint",
   "description": "Paint dyed blocks into other colors while in the world. Awesome!",
   "version": "1.1.4",
-  "mcversion": "1.10.2",
+  "mcversion": "1.11.2",
   "url": "https://minecraft.curseforge.com/projects/ctd-paint",
   "updateUrl": "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/CTD-Paint.json",
   "authorList": ["TheMasterGeneral"],
