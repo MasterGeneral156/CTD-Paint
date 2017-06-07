@@ -1,48 +1,46 @@
-buildscript
+buildscript 
 {
-    repositories
+    repositories 
 	{
         jcenter()
-        maven
-		{
-			url = "http://files.minecraftforge.net/maven"
+        maven 
+		{ 
+			url = "http://files.minecraftforge.net/maven" 
 		}
     }
-    dependencies
+    dependencies 
 	{
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.1.5-1.11.2"
-group = "com.themastergeneral.ctdpaint" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+version = "1.1.6"
+group = "com.themastergeneral.ctdpaint"
 archivesBaseName = "CTD Paint"
 
-sourceCompatibility = targetCompatibility = "1.8" // Need this here so eclipse task generates correctly.
-compileJava
+sourceCompatibility = targetCompatibility = "1.8"
+compileJava 
 {
     sourceCompatibility = targetCompatibility = "1.8"
 }
 
 minecraft 
 {
-    version = "1.11.2-13.20.0.2226"
+    version = "1.11.2-13.20.0.2314"
     runDir = "run"
     mappings = "snapshot_20161220"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
-
 repositories 
 {
-  maven 
-  {
-	//JEI
-    url = "http://dvs1.progwml6.com/files/maven"
-  }
+	maven 
+	{
+		//JEI
+		url = "http://dvs1.progwml6.com/files/maven"
+	}
 }
-
-dependencies
+dependencies 
 {
 	deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}:api"
 	runtime "mezz.jei:jei_${mc_version}:${jei_version}"
@@ -52,12 +50,13 @@ processResources
 {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
+
     from(sourceSets.main.resources.srcDirs) 
 	{
         include 'mcmod.info'
         expand 'version':project.version, 'mcversion':project.minecraft.version
     }
-    from(sourceSets.main.resources.srcDirs)
+    from(sourceSets.main.resources.srcDirs) 
 	{
         exclude 'mcmod.info'
     }
