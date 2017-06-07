@@ -1,14 +1,12 @@
-// For those who want the bleeding edge
-buildscript 
+buildscript
 {
     repositories 
 	{
-		jcenter()
-        maven 
-		{
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
+        jcenter()
+        maven
+		{ 
+			url = "http://files.minecraftforge.net/maven"
+		}
     }
     dependencies 
 	{
@@ -17,36 +15,35 @@ buildscript
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.1.5-1.10.2"
+version = "1.1.6-1.10.2"
 group= "com.themastergeneral.ctdpaint" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "CTD Paint"
 
 sourceCompatibility = targetCompatibility = "1.8" // Need this here so eclipse task generates correctly.
-compileJava {
+compileJava
+{
     sourceCompatibility = targetCompatibility = "1.8"
 }
 
 minecraft 
 {
-    version = "1.10.2-12.18.3.2221"
+    version = "1.10.2-12.18.3.2297"
     runDir = "run"
-    mappings = "snapshot_20160518"
+    mappings = "snapshot_20161111"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
 repositories 
 {
-  maven 
-  {
-	//JEI
-    url = "http://dvs1.progwml6.com/files/maven"
-  }
+	maven 
+	{
+		//JEI
+		url = "http://dvs1.progwml6.com/files/maven"
+	}
 }
 
 dependencies 
 {
-    compile files('libs/CTD Core 1.0.2.jar')
-	compile files('libs/Mo Glowstone-1.2.0-1.10.2.jar')
 	deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}:api"
 	runtime "mezz.jei:jei_${mc_version}:${jei_version}"
 }
