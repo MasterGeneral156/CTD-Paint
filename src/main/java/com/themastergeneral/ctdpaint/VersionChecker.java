@@ -17,7 +17,7 @@ public class VersionChecker implements Runnable
         InputStream in = null;
         try 
         {
-            in = new URL("https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTDPaint_112").openStream();
+            in = new URL("https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTDPaint_1102").openStream();
         } 
         catch 
         (MalformedURLException e) 
