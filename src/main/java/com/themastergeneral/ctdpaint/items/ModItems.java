@@ -10,9 +10,6 @@ import com.themastergeneral.ctdpaint.CTDPaint;
 public class ModItems extends RegisterItem
 {
 	/*public static BasicItem unused_brush;
-	public static BasicItem black_brush;
-	public static BasicItem white_brush;
-	public static BasicItem orange_brush;
 	public static BasicItem magenta_brush;
 	public static BasicItem cyan_brush;
 	public static BasicItem yellow_brush;
@@ -25,13 +22,14 @@ public class ModItems extends RegisterItem
 	public static BasicItem purple_brush;
 	public static BasicItem blue_brush;
 	public static BasicItem brown_brush;*/
+	public static WhitePaint white_brush;
 	public static RedPaint red_brush;
+	public static BlackPaint black_brush;
+	public static OrangePaint orange_brush;
 
 	public static void registerItems() 
 	{
 		/*unused_brush = register(new BasicItem("unused_brush", CTDPaint.MODID));
-		black_brush = register(new BasicItem("black_brush", CTDPaint.MODID));
-		white_brush = register(new BasicItem("white_brush", CTDPaint.MODID));
 		orange_brush = register(new BasicItem("orange_brush", CTDPaint.MODID));
 		magenta_brush = register(new BasicItem("magenta_brush", CTDPaint.MODID));
 		light_blue_brush = register(new BasicItem("light_blue_brush", CTDPaint.MODID));
@@ -45,6 +43,9 @@ public class ModItems extends RegisterItem
 		purple_brush = register(new BasicItem("purple_brush", CTDPaint.MODID));
 		blue_brush = register(new BasicItem("blue_brush", CTDPaint.MODID));
 		brown_brush = register(new BasicItem("brown_brush", CTDPaint.MODID));*/
+		white_brush = register(new WhitePaint("white_brush", CTDPaint.MODID));
+		orange_brush = register(new OrangePaint("orange_brush", CTDPaint.MODID));
 		red_brush = register(new RedPaint("red_brush", CTDPaint.MODID));
+		black_brush = register(new BlackPaint("black_brush", CTDPaint.MODID));
 	}
 }

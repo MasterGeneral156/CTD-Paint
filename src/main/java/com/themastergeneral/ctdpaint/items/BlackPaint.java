@@ -17,11 +17,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class RedPaint extends PaintBrush 
+public class BlackPaint extends PaintBrush 
 {
 	private Block containedBlock;
-	private int meta = 14;
-	public RedPaint(String unlocalizedName, String modid) 
+	private int meta = 15;
+	public BlackPaint(String unlocalizedName, String modid) 
 	{
 		super(unlocalizedName, modid);
 	}
