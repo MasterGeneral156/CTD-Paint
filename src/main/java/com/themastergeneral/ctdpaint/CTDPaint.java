@@ -19,10 +19,10 @@ public class CTDPaint
 {
 	public static final String MODID = "ctdpaint";
     public static final String MODNAME = "CTD Paint";
-    public static final String VERSION = "1.1.6";
+    public static final String VERSION = "2.0.0";
     public static final String acceptedMinecraftVersions = "1.11.2";
 	public static final String updateJSON = "https://github.com/MasterGeneral156/Version/blob/master/CTD-Paint.json";
-	public static final String DEPENDENCIES = "required-after:ctdcore@[1.0.3,];after:moglowstone@[1.2.4,];";
+	public static final String DEPENDENCIES = "required-after:ctdcore@[1.0.3,];";
     
     @Instance
     public static CTDPaint instance = new CTDPaint();
@@ -39,6 +39,8 @@ public class CTDPaint
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) 
     {
+    	logger = e.getModLog();
+    	logger.info("Starting CTD Paint.");
     	proxy.preInit(e);
     }
     @EventHandler
@@ -50,5 +52,6 @@ public class CTDPaint
     public void postInit(FMLPostInitializationEvent e) 
     {
     	proxy.postInit(e);
+    	logger.info("CTD Paint has loaded successfully.");
     }
 }
