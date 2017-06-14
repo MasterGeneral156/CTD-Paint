@@ -89,6 +89,18 @@ public class BluePaint extends PaintBrush
 					stack.damageItem(1, playerIn);
 					return EnumActionResult.SUCCESS;
 				}
+				if (iblockstate == Blocks.field_192443_dR.getStateFromMeta(x) && iblockstate != Blocks.field_192443_dR.getStateFromMeta(meta))
+				{
+					worldIn.setBlockState(pos, Blocks.field_192443_dR.getStateFromMeta(meta));
+					stack.damageItem(1, playerIn);
+					return EnumActionResult.SUCCESS;
+				}
+				if (iblockstate == Blocks.field_192444_dS.getStateFromMeta(x) && iblockstate != Blocks.field_192444_dS.getStateFromMeta(meta))
+				{
+					worldIn.setBlockState(pos, Blocks.field_192444_dS.getStateFromMeta(meta));
+					stack.damageItem(1, playerIn);
+					return EnumActionResult.SUCCESS;
+				}
 			}
         }
 		return EnumActionResult.FAIL;
