@@ -2,7 +2,6 @@ package com.themastergeneral.ctdpaint.proxy;
 
 import com.themastergeneral.ctdpaint.CTDPaint;
 import com.themastergeneral.ctdpaint.VersionChecker;
-import com.themastergeneral.ctdpaint.events.Painting;
 import com.themastergeneral.ctdpaint.events.UpdateNotify;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
