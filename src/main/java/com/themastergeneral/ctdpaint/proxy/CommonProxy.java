@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Level;
 
 import com.themastergeneral.ctdpaint.CTDPaint;
 import com.themastergeneral.ctdpaint.config.Config;
-import com.themastergeneral.ctdpaint.crafting.Crafting;
 import com.themastergeneral.ctdpaint.items.ModItems;
 
 import net.minecraft.item.Item;
@@ -27,7 +26,6 @@ public class CommonProxy
         config = new Configuration(new File(directory.getPath(), "CTD/CTDPaint.cfg"));
         Config.readConfig();
 		ModItems.registerItems();
-		Crafting.addRecipes();
 	}
 
 	public void init(FMLInitializationEvent e) 

@@ -19,10 +19,10 @@ public class CTDPaint
 {
 	public static final String MODID = "ctdpaint";
     public static final String MODNAME = "CTD Paint";
-    public static final String VERSION = "2.0.1";
+    public static final String VERSION = "2.0.2";
     public static final String acceptedMinecraftVersions = "1.12";
 	public static final String updateJSON = "https://github.com/MasterGeneral156/Version/blob/master/CTD-Paint.json";
-	public static final String DEPENDENCIES = "required-after:ctdcore@[1.1.1,];";
+	public static final String DEPENDENCIES = "required-after:ctdcore@[1.1.2,];";
     
     @Instance
     public static CTDPaint instance = new CTDPaint();
