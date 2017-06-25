@@ -89,15 +89,15 @@ public class PurplePaint extends PaintBrush
 					stack.damageItem(1, playerIn);
 					return EnumActionResult.SUCCESS;
 				}
-				if (iblockstate == Blocks.field_192443_dR.getStateFromMeta(x) && iblockstate != Blocks.field_192443_dR.getStateFromMeta(meta))
+				if (iblockstate == Blocks.CONCRETE.getStateFromMeta(x) && iblockstate != Blocks.CONCRETE.getStateFromMeta(meta))
 				{
-					worldIn.setBlockState(pos, Blocks.field_192443_dR.getStateFromMeta(meta));
+					worldIn.setBlockState(pos, Blocks.CONCRETE.getStateFromMeta(meta));
 					stack.damageItem(1, playerIn);
 					return EnumActionResult.SUCCESS;
 				}
-				if (iblockstate == Blocks.field_192444_dS.getStateFromMeta(x) && iblockstate != Blocks.field_192444_dS.getStateFromMeta(meta))
+				if (iblockstate == Blocks.CONCRETE_POWDER.getStateFromMeta(x) && iblockstate != Blocks.CONCRETE_POWDER.getStateFromMeta(meta))
 				{
-					worldIn.setBlockState(pos, Blocks.field_192444_dS.getStateFromMeta(meta));
+					worldIn.setBlockState(pos, Blocks.CONCRETE_POWDER.getStateFromMeta(meta));
 					stack.damageItem(1, playerIn);
 					return EnumActionResult.SUCCESS;
 				}
