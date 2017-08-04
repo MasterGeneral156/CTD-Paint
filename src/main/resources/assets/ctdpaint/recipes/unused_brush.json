@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdpaint",
+    "group": "ctdpaint_brush",
     "pattern": [
         "W",
         "S"
