@@ -14,24 +14,30 @@ import com.themastergeneral.ctdpaint.CTDPaint;
 import com.themastergeneral.ctdpaint.VersionChecker;
 import com.themastergeneral.ctdpaint.config.Config;
 
-public class UpdateNotify 
-{
+public class UpdateNotify {
 	public static VersionChecker versionChecker;
 	public static boolean haveWarnedVersionOutOfDate = false;
-	@SubscribeEvent(priority=EventPriority.NORMAL, receiveCanceled=true)
-	public void onEvent(PlayerTickEvent event)
-	{
-		if (Config.NotifiyUpdate == true)
-		{
-		    if (!CTDPaint.haveWarnedVersionOutOfDate && event.player.world.isRemote && !CTDPaint.versionChecker.isLatestVersion())
-		    {
-		        ClickEvent versionCheckChatClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, "https://minecraft.curseforge.com/projects/ctd-paint");
-		        Style clickableChatStyle = new Style().setClickEvent(versionCheckChatClickEvent);
-		        TextComponentString versionWarningChatComponent =   new TextComponentString("CTD Paint is now at "+VersionChecker.getLatestVersion()+". You are currently running "+CTDPaint.VERSION+". Click here to update.");
-		        versionWarningChatComponent.setStyle(clickableChatStyle);
-		        event.player.sendMessage(versionWarningChatComponent);
-		        CTDPaint.haveWarnedVersionOutOfDate = true;
-		    }
+
+	@SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
+	public void onEvent(PlayerTickEvent event) {
+		if (Config.NotifiyUpdate == true) {
+			if (!CTDPaint.haveWarnedVersionOutOfDate
+					&& event.player.world.isRemote
+					&& !CTDPaint.versionChecker.isLatestVersion()) {
+				ClickEvent versionCheckChatClickEvent = new ClickEvent(
+						ClickEvent.Action.OPEN_URL,
+						"https://minecraft.curseforge.com/projects/ctd-paint");
+				Style clickableChatStyle = new Style()
+						.setClickEvent(versionCheckChatClickEvent);
+				TextComponentString versionWarningChatComponent = new TextComponentString(
+						"CTD Paint is now at "
+								+ VersionChecker.getLatestVersion()
+								+ ". You are currently running "
+								+ CTDPaint.VERSION + ". Click here to update.");
+				versionWarningChatComponent.setStyle(clickableChatStyle);
+				event.player.sendMessage(versionWarningChatComponent);
+				CTDPaint.haveWarnedVersionOutOfDate = true;
+			}
 		}
 	}
 }

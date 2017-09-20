@@ -10,13 +10,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class BasicItem extends CTDItem
-{
-	public BasicItem(String unlocalizedName, String modid) 
-	{
-        super(unlocalizedName, modid);
-        this.setCreativeTab(CreativeTabs.TOOLS);
-        this.setNoRepair();
-        this.maxStackSize = 1;
-    }
+public class BasicItem extends CTDItem {
+	public BasicItem(String unlocalizedName, String modid) {
+		super(unlocalizedName, modid);
+		this.setCreativeTab(CreativeTabs.TOOLS);
+		this.setNoRepair();
+		this.maxStackSize = 1;
+	}
 }

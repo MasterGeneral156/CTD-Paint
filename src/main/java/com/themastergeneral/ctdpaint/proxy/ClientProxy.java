@@ -12,23 +12,21 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+public class ClientProxy extends CommonProxy {
+	public void preInit(FMLPreInitializationEvent e) {
+		super.preInit(e);
+	}
 
-public class ClientProxy extends CommonProxy
-{
-    public void preInit(FMLPreInitializationEvent e) 
-    {
-        super.preInit(e);
-    }
-    public void init(FMLInitializationEvent e) 
-    {
-        super.init(e);
-        MinecraftForge.EVENT_BUS.register(new UpdateNotify());
-    }
-    public void postInit(FMLPostInitializationEvent e) 
-    {
-        super.postInit(e);
-        CTDPaint.versionChecker = new VersionChecker();
-        Thread versionCheckThread = new Thread(CTDPaint.versionChecker, "Version Check");
-        versionCheckThread.start();
-    }
+	public void init(FMLInitializationEvent e) {
+		super.init(e);
+		MinecraftForge.EVENT_BUS.register(new UpdateNotify());
+	}
+
+	public void postInit(FMLPostInitializationEvent e) {
+		super.postInit(e);
+		CTDPaint.versionChecker = new VersionChecker();
+		Thread versionCheckThread = new Thread(CTDPaint.versionChecker,
+				"Version Check");
+		versionCheckThread.start();
+	}
 }
