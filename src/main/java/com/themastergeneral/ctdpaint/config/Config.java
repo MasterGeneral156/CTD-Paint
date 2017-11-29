@@ -14,7 +14,6 @@ public class Config {
 
 	// This values below you can access elsewhere in your mod:
 	public static boolean DoPaintBrushBreak = true;
-	public static boolean NotifiyUpdate = true;
 	public static int PaintBrushDurability = 1024;
 
 	// Call this from CommonProxy.preInit(). It will create our config if it
@@ -44,12 +43,6 @@ public class Config {
 						CATEGORY_GENERAL,
 						DoPaintBrushBreak,
 						"Set to false if you do not want your paint brushes to run out of paint after a random amount of time.");
-		NotifiyUpdate = cfg
-				.getBoolean(
-						"NotifiyUpdate",
-						CATEGORY_GENERAL,
-						NotifiyUpdate,
-						"If set to false, you won't be notified of an update when you log into a server.");
 		PaintBrushDurability = cfg.getInt("Paint Brush Durability",
 				CATEGORY_GENERAL, PaintBrushDurability, 1, 65655,
 				"How long should it take for your brush to empty?");
