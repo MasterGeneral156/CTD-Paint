@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "ctdpaint",
+    "ingredients": [
+    {
+		"type": "forge:ore_dict", 
+		"ore": "dyeLightBlue"
+    },
+    {
+      "item": "ctdpaint:unused_brush",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "ctdpaint:light_blue_brush",
+    "data": 0
+  }
+}

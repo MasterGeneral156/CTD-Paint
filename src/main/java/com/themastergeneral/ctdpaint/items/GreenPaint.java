@@ -25,10 +25,11 @@ public class GreenPaint extends PaintBrush {
 		super(unlocalizedName, modid);
 	}
 
-	public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn,
-			World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing,
-			float hitX, float hitY, float hitZ) {
+	public EnumActionResult onItemUse(EntityPlayer playerIn, World worldIn,
+			BlockPos pos, EnumHand handIn, EnumFacing facing, float hitX,
+			float hitY, float hitZ) {
 		if (!worldIn.isRemote) {
+			ItemStack stack = playerIn.getHeldItem(handIn);
 			if (!worldIn.isBlockModifiable(playerIn, pos)) {
 				return EnumActionResult.FAIL;
 			}
@@ -92,6 +93,22 @@ public class GreenPaint extends PaintBrush {
 						&& iblockstate != Blocks.CARPET.getStateFromMeta(meta)) {
 					worldIn.setBlockState(pos,
 							Blocks.CARPET.getStateFromMeta(meta));
+					stack.damageItem(1, playerIn);
+					return EnumActionResult.SUCCESS;
+				}
+				if (iblockstate == Blocks.CONCRETE.getStateFromMeta(x)
+						&& iblockstate != Blocks.CONCRETE
+								.getStateFromMeta(meta)) {
+					worldIn.setBlockState(pos,
+							Blocks.CONCRETE.getStateFromMeta(meta));
+					stack.damageItem(1, playerIn);
+					return EnumActionResult.SUCCESS;
+				}
+				if (iblockstate == Blocks.CONCRETE_POWDER.getStateFromMeta(x)
+						&& iblockstate != Blocks.CONCRETE_POWDER
+								.getStateFromMeta(meta)) {
+					worldIn.setBlockState(pos,
+							Blocks.CONCRETE_POWDER.getStateFromMeta(meta));
 					stack.damageItem(1, playerIn);
 					return EnumActionResult.SUCCESS;
 				}

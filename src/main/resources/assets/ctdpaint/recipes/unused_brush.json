@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdpaint_brush",
+    "pattern": [
+        "W",
+        "S"
+    ],
+    "key": {
+        "W": { "item": "minecraft:wheat" },
+        "S": [{"type": "forge:ore_dict", "ore": "stickWood"}]
+    },
+    "result": {
+        "item": "ctdpaint:unused_brush",
+        "data": 0
+    }
+}
