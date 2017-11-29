@@ -3,14 +3,14 @@
   "modid": "ctdpaint",
   "name": "CTD Paint",
   "description": "Paint dyed blocks into other colors while in the world. Awesome!",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "mcversion": "1.11.2",
   "url": "https://minecraft.curseforge.com/projects/ctd-paint",
   "updateUrl": "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Paint.json",
   "authorList": ["TheMasterGeneral"],
   "credits": "All rights reserved.",
-  "logoFile": "",
+  "logoFile": "assets/ctdpaint/textures/logo-new.png",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["ctdcore"]
 }
 ]

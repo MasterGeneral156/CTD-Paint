@@ -10,11 +10,9 @@ import com.themastergeneral.ctdpaint.config.Config;
 
 public class PaintBrush extends BasicItem {
 
-	public PaintBrush(String unlocalizedName, String modid) 
-	{
+	public PaintBrush(String unlocalizedName, String modid) {
 		super(unlocalizedName, modid);
-		if (Config.DoPaintBrushBreak == true)
-		{
+		if (Config.DoPaintBrushBreak == true) {
 			this.setMaxDamage(Config.PaintBrushDurability);
 		}
 	}
