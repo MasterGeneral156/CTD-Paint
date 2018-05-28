@@ -8,11 +8,13 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInterModComms.IMCEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import org.apache.logging.log4j.Logger;
 
+import com.themastergeneral.ctdpaint.painting.imc.IMCHandler;
 import com.themastergeneral.ctdpaint.proxy.CommonProxy;
 
 @Mod(modid = CTDPaint.MODID, name = CTDPaint.MODNAME, certificateFingerprint = CTDPaint.Fingerprint, version = CTDPaint.VERSION, acceptedMinecraftVersions = CTDPaint.acceptedMinecraftVersions, updateJSON = CTDPaint.updateJSON, dependencies = CTDPaint.DEPENDENCIES)
@@ -54,5 +56,11 @@ public class CTDPaint {
 	@EventHandler
 	public void onFingerprintViolation(FMLFingerprintViolationEvent e) {
 		FMLLog.warning("Invalid fingerprint detected for CTD Paint! TheMasterGeneral will not support this version!");
+	}
+
+	@EventHandler
+	public void handleIMC(IMCEvent e) {
+		logger.info("CTD Paint is awaiting IMC from other mods...");
+		IMCHandler.INSTANCE.handleIMC(e.getMessages());
 	}
 }
