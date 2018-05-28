@@ -22,7 +22,7 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent e) {
 		File directory = e.getModConfigurationDirectory();
 		config = new Configuration(new File(directory.getPath(),
-				"CTD/CTDPaint.cfg"));
+				"ctd/ctdpaint.cfg"));
 		Config.readConfig();
 		ModItems.registerItems();
 	}
