@@ -1,6 +1,7 @@
 package com.themastergeneral.ctdpaint.items;
 
 import com.themastergeneral.ctdpaint.CTDPaint;
+import com.themastergeneral.ctdpaint.painting.PaintLime;
 import com.themastergeneral.ctdpaint.painting.PaintRed;
 
 import net.minecraft.block.Block;
@@ -37,11 +38,11 @@ public class LimePaint extends PaintBrush {
 				return EnumActionResult.FAIL;
 			}
 			IBlockState iblockstate = worldIn.getBlockState(pos);
-			if (PaintRed.instance().getRecipeResult(iblockstate) != Blocks.AIR
+			if (PaintLime.instance().getRecipeResult(iblockstate) != Blocks.AIR
 					.getDefaultState()) {
 				stack.damageItem(1, playerIn);
-				worldIn.setBlockState(pos,
-						PaintRed.instance().getRecipeResult(iblockstate));
+				worldIn.setBlockState(pos, PaintLime.instance()
+						.getRecipeResult(iblockstate));
 				return EnumActionResult.SUCCESS;
 			}
 		}
