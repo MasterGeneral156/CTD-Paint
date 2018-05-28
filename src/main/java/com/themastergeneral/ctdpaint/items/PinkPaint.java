@@ -1,6 +1,8 @@
 package com.themastergeneral.ctdpaint.items;
 
 import com.themastergeneral.ctdpaint.CTDPaint;
+import com.themastergeneral.ctdpaint.painting.PaintPink;
+import com.themastergeneral.ctdpaint.painting.PaintRed;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -19,7 +21,6 @@ import net.minecraft.world.World;
 
 public class PinkPaint extends PaintBrush {
 	private Block containedBlock;
-	private int meta = 6;
 
 	public PinkPaint(String unlocalizedName, String modid) {
 		super(unlocalizedName, modid);
@@ -37,81 +38,12 @@ public class PinkPaint extends PaintBrush {
 				return EnumActionResult.FAIL;
 			}
 			IBlockState iblockstate = worldIn.getBlockState(pos);
-			for (int x = 0; x < 16; x = x + 1) {
-				if (iblockstate == Blocks.WOOL.getStateFromMeta(x)
-						&& iblockstate != Blocks.WOOL.getStateFromMeta(meta)) {
-					worldIn.setBlockState(pos,
-							Blocks.WOOL.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.GLASS.getStateFromMeta(0)) {
-					worldIn.setBlockState(pos,
-							Blocks.STAINED_GLASS.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.HARDENED_CLAY.getStateFromMeta(0)) {
-					worldIn.setBlockState(pos,
-							Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.GLASS_PANE.getStateFromMeta(0)) {
-					worldIn.setBlockState(pos,
-							Blocks.STAINED_GLASS_PANE.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.STAINED_HARDENED_CLAY
-						.getStateFromMeta(x)
-						&& iblockstate != Blocks.STAINED_HARDENED_CLAY
-								.getStateFromMeta(meta)) {
-					worldIn.setBlockState(pos,
-							Blocks.STAINED_HARDENED_CLAY.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.STAINED_GLASS.getStateFromMeta(x)
-						&& iblockstate != Blocks.STAINED_GLASS
-								.getStateFromMeta(meta)) {
-					worldIn.setBlockState(pos,
-							Blocks.STAINED_GLASS.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.STAINED_GLASS_PANE
-						.getStateFromMeta(x)
-						&& iblockstate != Blocks.STAINED_GLASS_PANE
-								.getStateFromMeta(meta)) {
-					worldIn.setBlockState(pos,
-							Blocks.STAINED_GLASS_PANE.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.CARPET.getStateFromMeta(x)
-						&& iblockstate != Blocks.CARPET.getStateFromMeta(meta)) {
-					worldIn.setBlockState(pos,
-							Blocks.CARPET.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.CONCRETE.getStateFromMeta(x)
-						&& iblockstate != Blocks.CONCRETE
-								.getStateFromMeta(meta)) {
-					worldIn.setBlockState(pos,
-							Blocks.CONCRETE.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
-				if (iblockstate == Blocks.CONCRETE_POWDER.getStateFromMeta(x)
-						&& iblockstate != Blocks.CONCRETE_POWDER
-								.getStateFromMeta(meta)) {
-					worldIn.setBlockState(pos,
-							Blocks.CONCRETE_POWDER.getStateFromMeta(meta));
-					stack.damageItem(1, playerIn);
-					return EnumActionResult.SUCCESS;
-				}
+			if (PaintPink.instance().getRecipeResult(iblockstate) != Blocks.AIR
+					.getDefaultState()) {
+				stack.damageItem(1, playerIn);
+				worldIn.setBlockState(pos,
+						PaintPink.instance().getRecipeResult(iblockstate));
+				return EnumActionResult.SUCCESS;
 			}
 		}
 		return EnumActionResult.FAIL;
