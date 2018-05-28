@@ -20,7 +20,6 @@ import net.minecraft.world.World;
 
 public class RedPaint extends PaintBrush {
 	private Block containedBlock;
-	private int meta = 14;
 
 	public RedPaint(String unlocalizedName, String modid) {
 		super(unlocalizedName, modid);

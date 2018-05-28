@@ -21,7 +21,6 @@ import net.minecraft.world.World;
 
 public class BluePaint extends PaintBrush {
 	private Block containedBlock;
-	private int meta = 11;
 
 	public BluePaint(String unlocalizedName, String modid) {
 		super(unlocalizedName, modid);
