@@ -19,10 +19,10 @@ import com.themastergeneral.ctdpaint.proxy.CommonProxy;
 public class CTDPaint {
 	public static final String MODID = "ctdpaint";
 	public static final String MODNAME = "CTD Paint";
-	public static final String VERSION = "2.1.2";
+	public static final String VERSION = "2.2.0";
 	public static final String acceptedMinecraftVersions = "1.12.2";
 	public static final String updateJSON = "https://github.com/MasterGeneral156/Version/blob/master/CTD-Paint.json";
-	public static final String DEPENDENCIES = "required-after:ctdcore@[1.2,];";
+	public static final String DEPENDENCIES = "required-after:ctdcore@[1.3.0,];";
 	public static final String Fingerprint = "5101015479fe39f20b47f365472250d312a50a57";
 
 	@Instance
@@ -32,8 +32,6 @@ public class CTDPaint {
 
 	@SidedProxy(clientSide = "com.themastergeneral.ctdpaint.proxy.ClientProxy", serverSide = "com.themastergeneral.ctdpaint.proxy.ServerProxy")
 	public static CommonProxy proxy;
-	public static boolean haveWarnedVersionOutOfDate;
-	public static boolean moglowstoneloaded = Loader.isModLoaded("moglowstone");
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
