@@ -61,7 +61,7 @@ public class PaintBlack {
 		IBlockState result = getRecipeResult(painted);
 		if (result == Blocks.AIR.getDefaultState()) {
 			CTDPaint.logger.error("Could not remove: " + painted
-					+ " from the Red Paint registry as it doesn't exist.");
+					+ " from the Black Paint registry as it doesn't exist.");
 			return;
 		}
 		recipeList.remove(painted, newblock);
