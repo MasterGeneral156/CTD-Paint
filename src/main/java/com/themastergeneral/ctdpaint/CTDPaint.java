@@ -21,10 +21,10 @@ import com.themastergeneral.ctdpaint.proxy.CommonProxy;
 public class CTDPaint {
 	public static final String MODID = "ctdpaint";
 	public static final String MODNAME = "CTD Paint";
-	public static final String VERSION = "2.2.0";
+	public static final String VERSION = "2.2.1";
 	public static final String acceptedMinecraftVersions = "1.12.2";
 	public static final String updateJSON = "https://github.com/MasterGeneral156/Version/blob/master/CTD-Paint.json";
-	public static final String DEPENDENCIES = "required-after:ctdcore@[1.3.0,];";
+	public static final String DEPENDENCIES = "required-after:ctdcore@[1.4.0,];";
 	public static final String Fingerprint = "b50fe22651b9d97d9d6631514a6a57cd6174b0dc";
 
 	@Instance
