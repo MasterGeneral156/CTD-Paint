@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Level;
 
 import com.themastergeneral.ctdpaint.CTDPaint;
 import com.themastergeneral.ctdpaint.config.Config;
+import com.themastergeneral.ctdpaint.integration.Integration;
 import com.themastergeneral.ctdpaint.items.ModItems;
 
 import net.minecraft.item.Item;
@@ -35,5 +36,6 @@ public class CommonProxy {
 		if (config.hasChanged()) {
 			config.save();
 		}
+		//Integration.load();
 	}
 }
