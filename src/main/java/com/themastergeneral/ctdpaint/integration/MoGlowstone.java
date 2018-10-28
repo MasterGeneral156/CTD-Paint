@@ -8,6 +8,6 @@ public class MoGlowstone {
 
 	public static void load()
 	{
-		PaintBlack.instance().addPaint(Blocks.GLOWSTONE.getBlockState(), newblock);
+		//PaintBlack.instance().addPaint(Blocks.GLOWSTONE.getBlockState(), newblock);
 	}
 }
