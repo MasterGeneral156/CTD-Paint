@@ -25,7 +25,7 @@ public class CTDPaint {
 	public static final String acceptedMinecraftVersions = "1.12.2";
 	public static final String updateJSON = "https://github.com/MasterGeneral156/Version/blob/master/CTD-Paint.json";
 	public static final String DEPENDENCIES = "required-after:ctdcore@[1.3.0,];";
-	public static final String Fingerprint = "5101015479fe39f20b47f365472250d312a50a57";
+	public static final String Fingerprint = "b50fe22651b9d97d9d6631514a6a57cd6174b0dc";
 
 	@Instance
 	public static CTDPaint instance = new CTDPaint();
