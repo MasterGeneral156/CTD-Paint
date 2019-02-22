@@ -28,9 +28,9 @@ public class PaintYellow {
 				addPaint(Blocks.STAINED_GLASS.getBlockState().getValidStates()
 						.get(x), Blocks.STAINED_GLASS.getBlockState()
 						.getValidStates().get(4));
-				addPaint(Blocks.STAINED_GLASS_PANE.getBlockState()
-						.getValidStates().get(x), Blocks.STAINED_GLASS_PANE
-						.getBlockState().getValidStates().get(4));
+				//addPaint(Blocks.STAINED_GLASS_PANE.getBlockState()
+				//		.getValidStates().get(x), Blocks.STAINED_GLASS_PANE
+				//		.getBlockState().getValidStates().get(4));
 				addPaint(Blocks.STAINED_HARDENED_CLAY.getBlockState()
 						.getValidStates().get(x), Blocks.STAINED_HARDENED_CLAY
 						.getBlockState().getValidStates().get(4));
